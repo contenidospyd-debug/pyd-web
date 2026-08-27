@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada | Psicología Integral y Desarrollo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        pyd: {
+                            50: '#f0f5fc',
+                            100: '#dce8f9',
+                            500: '#0056b3',
+                            600: '#004494',
+                            700: '#003370',
+                            900: '#001e42'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans min-h-screen flex flex-col justify-between selection:bg-pyd-100 selection:text-pyd-700">
+
+    <header class="bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="./" class="flex items-center space-x-3">
+                <img src="logo.png" alt="PYD Logo" class="h-10 w-auto object-contain">
+            </a>
+            <a href="./" class="text-xs font-bold uppercase tracking-wider text-pyd-500 hover:text-pyd-600 transition">
+                ← Volver al inicio
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center px-4 py-16">
+        <div class="max-w-lg w-full text-center bg-white p-10 sm:p-14 rounded-3xl shadow-xl border border-slate-100">
+            <div class="w-20 h-20 bg-pyd-50 text-pyd-500 rounded-3xl flex items-center justify-center text-3xl mx-auto mb-6 shadow-xs font-bold">
+                🧭
+            </div>
+            
+            <span class="text-pyd-500 font-extrabold text-xs uppercase tracking-widest block mb-2">Error 404 • Espacio en construcción o extraviado</span>
+            
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+                ¿Te perdiste en el camino?
+            </h1>
+            
+            <p class="text-slate-600 text-base leading-relaxed mb-8">
+                Sí estás perdido emocionalmente como esta página, te recomendamos volver a ti, dando clic en el siguiente enlace para reencontrar tu rumbo y bienestar.
+            </p>
+
+            <div class="space-y-3">
+                <a href="./" class="block w-full bg-pyd-500 hover:bg-pyd-600 text-white font-semibold py-4 rounded-xl shadow-lg shadow-pyd-500/25 transition text-base text-center">
+                    Volver a casa (Inicio)
+                </a>
+                <a href="https://wa.me/573008373012" target="_blank" class="block w-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-3.5 rounded-xl transition text-sm text-center">
+                    Contactar con un especialista
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-slate-100 py-6 text-center text-xs text-slate-400">
+        © 2026 Psicología Integral y Desarrollo (PYD). Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
