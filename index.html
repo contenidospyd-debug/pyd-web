@@ -3,147 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psicología Integral y Desarrollo (PYD) | Salud Mental y Coaching</title>
-    <meta name="description" content="Alianza de profesionales con más de 10 años de experiencia acompañando procesos y transformando vidas en salud mental y desarrollo humano.">
+    <title>Psicología Integral y Desarrollo (PYD) | Salud Mental y Bienestar</title>
+    <meta name="description" content="Plataforma de psicología clínica y organizacional. Especialistas en salud mental, bienestar emocional y desarrollo humano.">
+    <!-- Fuente moderna tipo startup / salud digital -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .bg-custom-blue { background-color: #0056b3; }
-        .text-custom-blue { color: #0056b3; }
-        .border-custom-blue { border-color: #0056b3; }
-        .hover\:bg-custom-blue-dark:hover { background-color: #003d82; }
-        .bg-custom-gray { background-color: #F8FAFC; }
-    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        pyd: {
+                            50: '#f0f5fc',
+                            100: '#dce8f9',
+                            500: '#0056b3', // Azul institucional PYD principal
+                            600: '#004494',
+                            700: '#003370',
+                            900: '#001e42'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-custom-gray text-slate-800 antialiased font-sans relative">
+<body class="bg-slate-50 text-slate-800 antialiased font-sans relative selection:bg-pyd-100 selection:text-pyd-700">
 
-    <!-- Header / Navbar -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+    <!-- Header / Navbar Minimalista Estilo Selia -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-xs">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Solo Logo (Se corrigió la ruta a logo.png.png según tu repositorio) -->
-            <a href="index.html" class="flex items-center">
-                <img src="logo.png.png" alt="PYD Logo" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex';" class="h-12 w-auto object-contain p-1 bg-slate-100 rounded-xl border border-slate-200">
-                <div id="fallback-logo" class="bg-custom-blue text-white font-bold p-2.5 rounded-xl text-lg shadow-sm hidden items-center justify-center">PYD</div>
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="logo.png" alt="PYD Logo" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex';" class="h-10 w-auto object-contain">
+                <div id="fallback-logo" class="bg-pyd-500 text-white font-bold px-3 py-2 rounded-xl text-sm hidden items-center justify-center">PYD</div>
             </a>
-
             <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
-                <a href="index.html" class="text-custom-blue transition">Inicio</a>
-                <a href="nosotros.html" class="hover:text-custom-blue transition">Nosotros</a>
-                <a href="#servicios" class="hover:text-custom-blue transition">Servicios</a>
-                <a href="#youtube" class="hover:text-custom-blue transition">Canal YouTube</a>
-                <a href="#contacto" class="hover:text-custom-blue transition">Contacto</a>
+                <a href="index.html" class="text-pyd-500 transition">Inicio</a>
+                <a href="nosotros.html" class="hover:text-pyd-500 transition">Nosotros</a>
+                <a href="#servicios" class="hover:text-pyd-500 transition">Servicios</a>
+                <a href="#beneficios" class="hover:text-pyd-500 transition">Por qué elegirnos</a>
+                <a href="#contacto" class="hover:text-pyd-500 transition">Contacto</a>
             </nav>
-            <div>
-                <a href="https://wa.me/573008373012" target="_blank" class="bg-custom-blue hover:bg-custom-blue-dark text-white font-medium px-5 py-2.5 rounded-xl text-sm shadow-sm transition">
-                    WhatsApp Directo
+            <div class="flex items-center space-x-3">
+                <a href="https://wa.me/573008373012" target="_blank" class="bg-pyd-500 hover:bg-pyd-600 text-white font-semibold px-5 py-2.5 rounded-xl text-sm shadow-sm shadow-pyd-500/20 transition">
+                    Agendar Cita
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Principal -->
-    <section class="py-16 lg:py-24 bg-white border-b border-slate-100 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-                <span class="inline-block bg-blue-50 text-custom-blue font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-6 border border-blue-100">
-                    ✨ +10 Años transformando vidas
-                </span>
-                <h1 class="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight leading-[1.15] mb-6">
-                    Acompañando procesos, <span class="text-custom-blue">transformando vidas</span>
+    <!-- Hero Section Amplio y Humano -->
+    <section class="py-20 lg:py-28 bg-white overflow-hidden border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 max-w-2xl">
+                <div class="inline-flex items-center space-x-2 bg-pyd-50 text-pyd-600 font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-6 border border-pyd-100">
+                    <span class="w-2 h-2 rounded-full bg-pyd-500 animate-pulse"></span>
+                    <span>Psicología Clínica y Organizacional</span>
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-6">
+                    Un espacio seguro para <span class="text-pyd-500">transformar tu vida</span>
                 </h1>
                 <p class="text-lg text-slate-600 mb-8 leading-relaxed font-normal">
-                    Somos una alianza de psicólogos especializados en salud mental, bienestar emocional y desarrollo humano. Gracias por confiar en nuestro equipo.
+                    Conectamos personas, familias y organizaciones con un equipo riguroso de especialistas en salud mental. Te acompañamos a sanar, crecer y potenciar tu bienestar integral.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="https://wa.me/573008373012" target="_blank" class="bg-custom-blue hover:bg-custom-blue-dark text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-blue-500/20 transition text-center text-base">
-                        👉 Agenda tu sesión por WhatsApp
+                    <a href="https://wa.me/573008373012" target="_blank" class="bg-pyd-500 hover:bg-pyd-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg shadow-pyd-500/25 transition text-center text-base">
+                        Agendar con un especialista
                     </a>
-                    <a href="nosotros.html" class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold px-8 py-4 rounded-xl transition text-center text-base">
-                        Conoce más de nosotros
-                    </a>
-                </div>
-            </div>
-            <div class="relative flex justify-center">
-                <div class="absolute -inset-4 bg-gradient-to-tr from-blue-100 to-indigo-50 rounded-3xl -z-10 blur-xl opacity-70"></div>
-                <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80" alt="Apoyo psicológico profesional y humano" class="rounded-3xl shadow-2xl w-full max-w-lg object-cover h-[450px] border-4 border-white">
-            </div>
-        </div>
-    </section>
-
-    <!-- Franja de Pilares -->
-    <section class="py-12 bg-custom-blue text-white shadow-inner">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8 text-center">
-            <div class="p-4">
-                <div class="text-3xl mb-3">👥</div>
-                <h3 class="font-bold text-lg mb-1">Acompañamiento profesional y humano</h3>
-                <p class="text-blue-100 text-sm">Escucha activa, empatía y rigor científico.</p>
-            </div>
-            <div class="p-4 border-y md:border-y-0 md:border-x border-blue-400/30">
-                <div class="text-3xl mb-3">🧠</div>
-                <h3 class="font-bold text-lg mb-1">Bienestar emocional para una vida plena</h3>
-                <p class="text-blue-100 text-sm">Herramientas prácticas para tu desarrollo personal.</p>
-            </div>
-            <div class="p-4">
-                <div class="text-3xl mb-3">📈</div>
-                <h3 class="font-bold text-lg mb-1">Crecemos junto a nuestra comunidad</h3>
-                <p class="text-blue-100 text-sm">Más de una década construyendo espacios seguros.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Servicios -->
-    <section id="servicios" class="py-20 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-black text-slate-900 tracking-tight mb-4">Nuestras Áreas de Especialidad</h2>
-                <p class="text-slate-600 text-lg">Soluciones integrales, éticas y basadas en evidencia para el bienestar emocional y corporativo.</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
-                    <div class="text-3xl mb-4">🛋️</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3 text-custom-blue">Psicología Clínica</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Espacio seguro para trabajar el bienestar emocional, manejo de ansiedad, duelos y procesos individuales o de pareja.</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
-                    <div class="text-3xl mb-4">🏢</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3 text-custom-blue">Psicología Organizacional</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Acompañamiento a empresas en programas de bienestar, clima laboral, liderazgo consciente y gestión del talento humano.</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
-                    <div class="text-3xl mb-4">🎓</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3 text-custom-blue">Formación y Talleres</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Cursos formativos, escuelas de familia y conferencias orientadas al desarrollo humano y crecimiento personal.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Canal de YouTube -->
-    <section id="youtube" class="py-20 bg-white border-t border-slate-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <span class="inline-block bg-red-50 text-red-600 font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-4 border border-red-100">
-                        📺 Recurso Audiovisual
-                    </span>
-                    <h2 class="text-3xl font-black text-slate-900 tracking-tight mb-4">Visita nuestro Canal de YouTube</h2>
-                    <p class="text-slate-600 text-lg mb-6 leading-relaxed">
-                        Explora reflexiones sobre salud mental, entrevistas con especialistas y contenidos prácticos diseñados para acompañar tu día a día.
-                    </p>
-                    <a href="https://www.youtube.com/@psicologiaintegralydesarrollo" target="_blank" class="inline-flex items-center space-x-2 bg-red-600 hover:bg-red-700 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-red-600/20 transition text-sm">
-                        <span>Suscríbete al Canal de YouTube</span>
+                    <a href="#servicios" class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-8 py-4 rounded-xl transition text-center text-base">
+                        Conocer servicios
                     </a>
                 </div>
-                <div class="relative group">
-                    <div class="absolute -inset-2 bg-gradient-to-r from-red-500 to-blue-600 rounded-3xl opacity-20 blur-lg"></div>
-                    <div class="relative bg-slate-900 rounded-2xl overflow-hidden shadow-2xl border border-slate-800">
-                        <div class="relative aspect-video bg-slate-950 flex flex-col items-center justify-center p-6 text-center">
-                            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80')] bg-cover bg-center opacity-30"></div>
-                            <div class="relative z-10">
-                                <div class="w-16 h-16 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-4 shadow-xl shadow-red-600/50">▶</div>
-                                <h3 class="text-white font-bold text-lg mb-1">Psicología Integral y Desarrollo</h3>
-                                <p class="text-slate-300 text-xs mb-4">Canal oficial de bienestar y salud mental</p>
-                                <a href="https://www.youtube.com/@psicologiaintegralydesarrollo" target="_blank" class="inline-block bg-white text-slate-900 font-bold px-4 py-2 rounded-lg text-xs hover:bg-slate-100 transition shadow">Ver videos en YouTube</a>
-                            </div>
+                <div class="mt-10 grid grid-cols-3 gap-4 border-t border-slate-100 pt-8 text-slate-600 text-sm font-medium">
+                    <div>
+                        <strong class="block text-slate-900 text-lg font-bold">+10 Años</strong> De trayectoria profesional
+                    </div>
+                    <div>
+                        <strong class="block text-slate-900 text-lg font-bold">100%</strong> Confidencial y seguro
+                    </div>
+                    <div>
+                        <strong class="block text-slate-900 text-lg font-bold">Online / Presencial</strong> A tu medida
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-5 relative">
+                <div class="absolute -inset-4 bg-gradient-to-tr from-pyd-50 to-blue-100/50 rounded-3xl -z-10 blur-2xl"></div>
+                <!-- Imagen moderna estilo plataforma de salud digital -->
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100">
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80" alt="Sesión de psicología profesional" class="w-full h-[500px] object-cover object-center">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent flex items-end p-6">
+                        <div class="text-white">
+                            <p class="text-xs font-semibold uppercase tracking-wider text-pyd-100">Atención personalizada</p>
+                            <p class="text-base font-bold">Profesionales titulados a tu disposición</p>
                         </div>
                     </div>
                 </div>
@@ -151,41 +106,161 @@
         </div>
     </section>
 
-    <!-- Sección de Contacto con Formulario -->
-    <section id="contacto" class="py-20 bg-slate-50 border-t border-slate-100">
+    <!-- Indicadores de Confianza -->
+    <section class="py-12 bg-slate-50 border-b border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="bg-white p-6 rounded-2xl shadow-xs border border-slate-100">
+                <div class="text-3xl font-extrabold text-pyd-500 mb-1">+1,500</div>
+                <div class="text-xs text-slate-500 font-semibold uppercase tracking-wider">Pacientes atendidos</div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-xs border border-slate-100">
+                <div class="text-3xl font-extrabold text-pyd-500 mb-1">Especialistas</div>
+                <div class="text-xs text-slate-500 font-semibold uppercase tracking-wider">Clínicos y Organizacionales</div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-xs border border-slate-100">
+                <div class="text-3xl font-extrabold text-pyd-500 mb-1">Empresas</div>
+                <div class="text-xs text-slate-500 font-semibold uppercase tracking-wider">Aliadas en bienestar laboral</div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-xs border border-slate-100">
+                <div class="text-3xl font-extrabold text-pyd-500 mb-1">Duitama</div>
+                <div class="text-xs text-slate-500 font-semibold uppercase tracking-wider">Boyacá, Colombia</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios Detallada -->
+    <section id="servicios" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-pyd-500 font-bold text-xs uppercase tracking-widest block mb-3">Modelos de Intervención</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Soluciones integrales en salud mental</h2>
+                <p class="text-slate-600 mt-4 text-base">Diseñamos espacios de escucha, evaluación y tratamiento con un enfoque humano basado en evidencia científica.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-100 hover:border-pyd-100 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-pyd-50 text-pyd-500 rounded-2xl flex items-center justify-center text-2xl mb-6 font-bold shadow-xs">🧠</div>
+                        <h3 class="text-xl font-extrabold text-slate-900 mb-3">Psicología Clínica</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Acompañamiento psicoterapéutico individual, de pareja y familiar enfocado en la gestión de la ansiedad, depresión, duelo, autoestima y resolución de conflictos.</p>
+                    </div>
+                    <a href="https://wa.me/573008373012" target="_blank" class="text-pyd-500 text-sm font-bold inline-flex items-center hover:text-pyd-700 transition">Agendar terapia clínica →</a>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-100 hover:border-pyd-100 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-pyd-50 text-pyd-500 rounded-2xl flex items-center justify-center text-2xl mb-6 font-bold shadow-xs">📊</div>
+                        <h3 class="text-xl font-extrabold text-slate-900 mb-3">Psicología Organizacional</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Consultoría integral para empresas: programas de bienestar laboral, gestión del clima organizacional, prevención de riesgos psicosociales, selección de talento y liderazgo.</p>
+                    </div>
+                    <a href="https://wa.me/573008373012" target="_blank" class="text-pyd-500 text-sm font-bold inline-flex items-center hover:text-pyd-700 transition">Solicitar propuesta empresarial →</a>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-100 hover:border-pyd-100 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-pyd-50 text-pyd-500 rounded-2xl flex items-center justify-center text-2xl mb-6 font-bold shadow-xs">🌱</div>
+                        <h3 class="text-xl font-extrabold text-slate-900 mb-3">Talleres y Desarrollo Humano</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Espacios educativos y conferencias orientadas a la psicoeducación, habilidades blandas, inteligencia emocional y crecimiento personal para comunidades y organizaciones.</p>
+                    </div>
+                    <a href="https://wa.me/573008373012" target="_blank" class="text-pyd-500 text-sm font-bold inline-flex items-center hover:text-pyd-700 transition">Conocer programación →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección ¿Por qué elegir PYD? Estilo Tarjetas Limpias -->
+    <section id="beneficios" class="py-24 bg-slate-50 border-t border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-pyd-500 font-bold text-xs uppercase tracking-widest block mb-3">Nuestros Pilares</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-6">Una experiencia de atención diseñada para ti</h2>
+                    <p class="text-slate-600 text-base leading-relaxed mb-8">Sabemos que dar el paso hacia el cuidado de tu salud mental requiere confianza. Por eso facilitamos el proceso con altos estándares de calidad humana y profesional.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4 bg-white p-5 rounded-2xl border border-slate-100 shadow-xs">
+                            <div class="bg-pyd-50 text-pyd-500 p-3 rounded-xl font-bold">🔒</div>
+                            <div>
+                                <h3 class="text-slate-900 font-bold text-base mb-1">Confidencialidad rigurosa</h3>
+                                <p class="text-slate-600 text-sm">Tu información y cada espacio terapéutico se encuentran protegidos bajo el secreto profesional.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 bg-white p-5 rounded-2xl border border-slate-100 shadow-xs">
+                            <div class="bg-pyd-50 text-pyd-500 p-3 rounded-xl font-bold">🎯</div>
+                            <div>
+                                <h3 class="text-slate-900 font-bold text-base mb-1">Enfoque personalizado</h3>
+                                <p class="text-slate-600 text-sm">Adaptamos las herramientas terapéuticas y de diagnóstico a tu historia de vida y metas personales.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 bg-white p-5 rounded-2xl border border-slate-100 shadow-xs">
+                            <div class="bg-pyd-50 text-pyd-500 p-3 rounded-xl font-bold">💻</div>
+                            <div>
+                                <h3 class="text-slate-900 font-bold text-base mb-1">Flexibilidad horaria y modalidad</h3>
+                                <p class="text-slate-600 text-sm">Elige entre sesiones virtuales desde cualquier lugar o atención presencial en Duitama.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100">
+                        <img src="https://images.unsplash.com/photo-1516307365426-fea591d28e12?auto=format&fit=crop&w=800&q=80" alt="Entorno de bienestar y tranquilidad" class="w-full h-[600px] object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto Ampliada -->
+    <section id="contacto" class="py-24 bg-white border-t border-slate-200/60">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <span class="inline-block bg-blue-50 text-custom-blue font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3 border border-blue-100">
-                    Estamos para escucharte
-                </span>
-                <h2 class="text-3xl font-black text-slate-900 tracking-tight mb-3">Envíanos un mensaje</h2>
-                <p class="text-slate-600">Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+            <div class="text-center mb-16">
+                <span class="text-pyd-500 font-bold text-xs uppercase tracking-widest block mb-2">Inicia hoy tu proceso</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Estamos listos para escucharte</h2>
+                <p class="text-slate-600 text-base mt-3">Escríbenos a través del formulario o comunícate por nuestros canales directos de atención.</p>
             </div>
 
-            <form action="https://formsubmit.co/psicologiaintegralydesarrollo@gmail.com" method="POST" class="bg-white p-8 sm:p-10 rounded-3xl shadow-xl border border-slate-100 space-y-6">
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-slate-50 p-6 rounded-2xl text-center border border-slate-100">
+                    <div class="text-2xl mb-2">💬</div>
+                    <h3 class="font-bold text-slate-900 text-sm mb-1">WhatsApp</h3>
+                    <a href="https://wa.me/573008373012" target="_blank" class="text-pyd-500 text-sm font-semibold hover:underline">+57 300 8373012</a>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl text-center border border-slate-100">
+                    <div class="text-2xl mb-2">✉️</div>
+                    <h3 class="font-bold text-slate-900 text-sm mb-1">Correo General</h3>
+                    <a href="mailto:psicologiaintegralydesarrollo@gmail.com" class="text-pyd-500 text-xs font-semibold hover:underline">psicologiaintegralydesarrollo@gmail.com</a>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl text-center border border-slate-100">
+                    <div class="text-2xl mb-2">📂</div>
+                    <h3 class="font-bold text-slate-900 text-sm mb-1">Selección / Talento</h3>
+                    <a href="mailto:seleccionpsicologiaintegral@gmail.com" class="text-pyd-500 text-xs font-semibold hover:underline">seleccionpsicologiaintegral@gmail.com</a>
+                </div>
+            </div>
+
+            <form action="https://formsubmit.co/psicologiaintegralydesarrollo@gmail.com" method="POST" class="bg-slate-50 p-8 sm:p-12 rounded-3xl shadow-xs border border-slate-200/60 space-y-6">
                 <input type="hidden" name="_subject" value="Nuevo mensaje desde la Web PYD">
                 <input type="hidden" name="_captcha" value="false">
 
                 <div class="grid sm:grid-cols-2 gap-6">
                     <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Tu Nombre</label>
-                        <input type="text" name="nombre" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-custom-blue transition" placeholder="Ej. Ana María Gómez">
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">Nombre completo</label>
+                        <input type="text" name="nombre" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-pyd-500 transition" placeholder="Tu nombre">
                     </div>
                     <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Correo Electrónico</label>
-                        <input type="email" name="email" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-custom-blue transition" placeholder="tu_correo@gmail.com">
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">Correo electrónico</label>
+                        <input type="email" name="email" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-pyd-500 transition" placeholder="tu@correo.com">
                     </div>
                 </div>
                 <div>
-                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Asunto o Motivo</label>
-                    <input type="text" name="asunto" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-custom-blue transition" placeholder="Ej. Información sobre citas clínicas">
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">Asunto del mensaje</label>
+                    <input type="text" name="asunto" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-pyd-500 transition" placeholder="Ej: Terapia individual / Consultoría organizacional">
                 </div>
                 <div>
-                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Mensaje</label>
-                    <textarea name="mensaje" rows="4" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-custom-blue transition" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">Mensaje</label>
+                    <textarea name="mensaje" rows="5" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-pyd-500 transition" placeholder="Cuéntanos brevemente cómo podemos ayudarte..."></textarea>
                 </div>
-                <button type="submit" class="w-full bg-custom-blue hover:bg-custom-blue-dark text-white font-bold py-4 rounded-xl shadow-lg shadow-blue-500/20 transition text-base">
-                    Enviar Mensaje
+                <button type="submit" class="w-full bg-pyd-500 hover:bg-pyd-600 text-white font-semibold py-4 rounded-xl shadow-md transition text-base">
+                    Enviar mensaje
                 </button>
             </form>
         </div>
@@ -195,25 +270,22 @@
     <footer class="bg-slate-900 text-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-12">
             <div>
-                <h3 class="text-lg font-bold mb-4">Psicología Integral y Desarrollo</h3>
-                <p class="text-slate-400 text-sm leading-relaxed mb-4">Alianza de profesionales trabajando por la salud mental y el desarrollo humano desde Duitama, Boyacá – Colombia.</p>
-                <div class="flex space-x-3 mt-4">
-                    <a href="https://www.youtube.com/@psicologiaintegralydesarrollo" target="_blank" class="bg-slate-800 hover:bg-custom-blue p-2.5 rounded-xl text-xs transition">YouTube</a>
-                    <a href="https://www.instagram.com/psicologiaintegralydesarrollo/" target="_blank" class="bg-slate-800 hover:bg-custom-blue p-2.5 rounded-xl text-xs transition">Instagram</a>
-                    <a href="https://www.facebook.com/p/Psicolog%C3%ADa-Integral-y-Desarrollo-100063636155963" target="_blank" class="bg-slate-800 hover:bg-custom-blue p-2.5 rounded-xl text-xs transition">Facebook</a>
+                <h3 class="text-base font-bold mb-3">Psicología Integral y Desarrollo</h3>
+                <p class="text-slate-400 text-xs leading-relaxed mb-4">Especialistas en salud mental y desarrollo humano comprometidos con la excelencia profesional desde Duitama, Boyacá – Colombia.</p>
+                <div class="flex space-x-3">
+                    <a href="https://www.youtube.com/@psicologiaintegralydesarrollo" target="_blank" class="bg-slate-800 hover:bg-pyd-500 px-3 py-2 rounded-lg text-xs font-semibold transition">YouTube</a>
+                    <a href="https://www.instagram.com/psicologiaintegralydesarrollo/" target="_blank" class="bg-slate-800 hover:bg-pyd-500 px-3 py-2 rounded-lg text-xs font-semibold transition">Instagram</a>
                 </div>
             </div>
             <div>
-                <h3 class="text-lg font-bold mb-4">Canales de Contacto</h3>
-                <p class="text-slate-400 text-sm mb-2"><strong>General / Citas:</strong><br><a href="mailto:psicologiaintegralydesarrollo@gmail.com" class="text-blue-400 hover:underline">psicologiaintegralydesarrollo@gmail.com</a></p>
-                <p class="text-slate-400 text-sm"><strong>Trabaja con nosotros:</strong><br><a href="mailto:seleccionpsicologiaintegral@gmail.com" class="text-blue-400 hover:underline">seleccionpsicologiaintegral@gmail.com</a></p>
+                <h3 class="text-base font-bold mb-3">Contacto Directo</h3>
+                <p class="text-slate-400 text-xs mb-2"><strong>General:</strong> <a href="mailto:psicologiaintegralydesarrollo@gmail.com" class="text-blue-400 hover:underline">psicologiaintegralydesarrollo@gmail.com</a></p>
+                <p class="text-slate-400 text-xs"><strong>Selección:</strong> <a href="mailto:seleccionpsicologiaintegral@gmail.com" class="text-blue-400 hover:underline">seleccionpsicologiaintegral@gmail.com</a></p>
             </div>
             <div>
-                <h3 class="text-lg font-bold mb-4">Atención Inmediata</h3>
-                <p class="text-slate-400 text-sm mb-4">Escríbenos directamente a nuestro WhatsApp corporativo.</p>
-                <a href="https://wa.me/573008373012" target="_blank" class="inline-block bg-custom-blue hover:bg-custom-blue-dark text-white font-semibold px-6 py-3 rounded-xl text-sm transition shadow-sm">
-                    Abrir WhatsApp
-                </a>
+                <h3 class="text-base font-bold mb-3">Canal de Agendamiento</h3>
+                <p class="text-slate-400 text-xs mb-3">Comunícate de forma directa vía WhatsApp para separar tu cita.</p>
+                <a href="https://wa.me/573008373012" target="_blank" class="inline-block bg-pyd-500 hover:bg-pyd-600 text-white font-semibold px-5 py-2.5 rounded-xl text-xs transition">Abrir WhatsApp</a>
             </div>
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
@@ -222,7 +294,7 @@
     </footer>
 
     <!-- Botón Ir Arriba -->
-    <a href="#" class="fixed bottom-6 right-6 bg-custom-blue hover:bg-custom-blue-dark text-white w-12 h-12 rounded-full shadow-xl flex items-center justify-center text-lg transition z-50" title="Ir arriba">
+    <a href="#" class="fixed bottom-6 right-6 bg-pyd-500 hover:bg-pyd-600 text-white w-12 h-12 rounded-full shadow-2xl flex items-center justify-center text-lg transition z-50" title="Ir arriba">
         ↑
     </a>
 
