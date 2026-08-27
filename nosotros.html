@@ -14,19 +14,15 @@
         .bg-custom-gray { background-color: #F8FAFC; }
     </style>
 </head>
-<body class="bg-custom-gray text-slate-800 antialiased font-sans">
+<body class="bg-custom-gray text-slate-800 antialiased font-sans relative">
 
     <!-- Header / Navbar -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <img src="logo.png" alt="PYD Logo" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex';" class="h-11 w-auto object-contain">
+            <a href="index.html" class="flex items-center">
+                <img src="logo.png.png" alt="PYD Logo" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex';" class="h-12 w-auto object-contain p-1 bg-slate-100 rounded-xl border border-slate-200">
                 <div id="fallback-logo" class="bg-custom-blue text-white font-bold p-2.5 rounded-xl text-lg shadow-sm hidden items-center justify-center">PYD</div>
-                <div>
-                    <span class="block font-bold text-slate-900 leading-tight text-base">Psicología Integral y Desarrollo</span>
-                    <span class="text-xs text-slate-500 font-medium">Alianza de Profesionales</span>
-                </div>
-            </div>
+            </a>
             <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
                 <a href="index.html" class="hover:text-custom-blue transition">Inicio</a>
                 <a href="nosotros.html" class="text-custom-blue transition">Nosotros</a>
@@ -94,7 +90,7 @@
         </div>
     </section>
 
-    <!-- Footer con correos actualizados -->
+    <!-- Footer -->
     <footer class="bg-slate-900 text-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-12">
             <div>
@@ -123,8 +119,10 @@
         </div>
     </footer>
 
-</body>
-</html>
+    <!-- Botón Ir Arriba -->
+    <a href="#" class="fixed bottom-6 right-6 bg-custom-blue hover:bg-custom-blue-dark text-white w-12 h-12 rounded-full shadow-xl flex items-center justify-center text-lg transition z-50" title="Ir arriba">
+        ↑
+    </a>
 
 </body>
 </html>
