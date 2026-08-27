@@ -11,26 +11,24 @@
         .text-custom-blue { color: #0056b3; }
         .border-custom-blue { border-color: #0056b3; }
         .hover\:bg-custom-blue-dark:hover { background-color: #003d82; }
-        .bg-custom-orange { background-color: #ED4C24; }
-        .text-custom-orange { color: #ED4C24; }
-        .bg-custom-gray { background-color: #F4F7FC; }
+        .bg-custom-gray { background-color: #F8FAFC; }
     </style>
 </head>
 <body class="bg-custom-gray text-slate-800 antialiased font-sans">
 
     <!-- Header / Navbar -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <img src="logo.png" alt="PYD Logo" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex';" class="h-10 w-auto object-contain">
+                <img src="logo.png" alt="PYD Logo" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex';" class="h-11 w-auto object-contain">
                 <div id="fallback-logo" class="bg-custom-blue text-white font-bold p-2.5 rounded-xl text-lg shadow-sm hidden items-center justify-center">PYD</div>
                 <div>
-                    <span class="block font-bold text-slate-900 leading-tight">Psicología Integral y Desarrollo</span>
-                    <span class="text-xs text-slate-500">Alianza de Profesionales</span>
+                    <span class="block font-bold text-slate-900 leading-tight text-base">Psicología Integral y Desarrollo</span>
+                    <span class="text-xs text-slate-500 font-medium">Alianza de Profesionales</span>
                 </div>
             </div>
-            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
-                <a href="index.html" class="text-custom-blue font-semibold transition">Inicio</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
+                <a href="index.html" class="text-custom-blue transition">Inicio</a>
                 <a href="nosotros.html" class="hover:text-custom-blue transition">Nosotros</a>
                 <a href="#servicios" class="hover:text-custom-blue transition">Servicios</a>
                 <a href="#youtube" class="hover:text-custom-blue transition">Canal YouTube</a>
@@ -44,103 +42,112 @@
         </div>
     </header>
 
-    <!-- Hero Principal (Inspirado en el diseño limpio y humano) -->
-    <section class="py-16 lg:py-24 bg-white border-b border-slate-200">
+    <!-- Hero Principal -->
+    <section class="py-16 lg:py-24 bg-white border-b border-slate-100 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
             <div>
-                <span class="inline-block bg-blue-50 text-custom-blue font-semibold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-6 border border-blue-100">
-                    ✨ Más de 10 años transformando vidas
+                <span class="inline-block bg-blue-50 text-custom-blue font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-6 border border-blue-100">
+                    ✨ +10 Años transformando vidas
                 </span>
-                <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
-                    Acompañando procesos, transformando vidas
+                <h1 class="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight leading-[1.15] mb-6">
+                    Acompañando procesos, <span class="text-custom-blue">transformando vidas</span>
                 </h1>
-                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
-                    Somos una alianza de psicólogos especializados en salud mental, bienestar emocional y desarrollo humano. Gracias por confiar en nosotros.
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed font-normal">
+                    Somos una alianza de psicólogos especializados en salud mental, bienestar emocional y desarrollo humano. Gracias por confiar en nuestro equipo.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="https://wa.me/573008373012" target="_blank" class="bg-custom-blue hover:bg-custom-blue-dark text-white font-semibold px-8 py-4 rounded-xl shadow-md transition text-center text-base">
+                    <a href="https://wa.me/573008373012" target="_blank" class="bg-custom-blue hover:bg-custom-blue-dark text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-blue-500/20 transition text-center text-base">
                         👉 Agenda tu sesión por WhatsApp
                     </a>
-                    <a href="nosotros.html" class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-8 py-4 rounded-xl transition text-center text-base">
+                    <a href="nosotros.html" class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold px-8 py-4 rounded-xl transition text-center text-base">
                         Conoce más de nosotros
                     </a>
                 </div>
             </div>
-            <div class="relative">
-                <div class="absolute -inset-2 bg-custom-blue rounded-3xl opacity-10 blur-lg"></div>
-                <!-- Imagen alusiva de apoyo humano acorde al diseño -->
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Apoyo psicológico y humano" class="relative rounded-3xl shadow-xl w-full object-cover h-[420px]">
+            <div class="relative flex justify-center">
+                <div class="absolute -inset-4 bg-gradient-to-tr from-blue-100 to-indigo-50 rounded-3xl -z-10 blur-xl opacity-70"></div>
+                <!-- Imagen alusiva renovada (enfoque cálido y humano) -->
+                <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80" alt="Apoyo psicológico profesional y humano" class="rounded-3xl shadow-2xl w-full max-w-lg object-cover h-[450px] border-4 border-white">
             </div>
         </div>
     </section>
 
-    <!-- Franja de Valores / Pilares (Estilo de la tarjeta inferior del diseño) -->
-    <section class="py-12 bg-custom-blue text-white">
+    <!-- Franja de Pilares (Estilo de tarjetas institucionales) -->
+    <section class="py-12 bg-custom-blue text-white shadow-inner">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8 text-center">
             <div class="p-4">
-                <div class="text-3xl mb-2">👥</div>
+                <div class="text-3xl mb-3">👥</div>
                 <h3 class="font-bold text-lg mb-1">Acompañamiento profesional y humano</h3>
-                <p class="text-blue-100 text-sm">Escucha activa, empatía y rigor científico en cada sesión.</p>
+                <p class="text-blue-100 text-sm">Escucha activa, empatía y rigor científico.</p>
             </div>
-            <div class="p-4 border-y md:border-y-0 md:border-x border-blue-400/40">
-                <div class="text-3xl mb-2">🧠</div>
+            <div class="p-4 border-y md:border-y-0 md:border-x border-blue-400/30">
+                <div class="text-3xl mb-3">🧠</div>
                 <h3 class="font-bold text-lg mb-1">Bienestar emocional para una vida plena</h3>
-                <p class="text-blue-100 text-sm">Herramientas prácticas para gestionar la ansiedad y el desarrollo personal.</p>
+                <p class="text-blue-100 text-sm">Herramientas prácticas para tu desarrollo personal.</p>
             </div>
             <div class="p-4">
-                <div class="text-3xl mb-2">📈</div>
+                <div class="text-3xl mb-3">📈</div>
                 <h3 class="font-bold text-lg mb-1">Crecemos junto a nuestra comunidad</h3>
-                <p class="text-blue-100 text-sm">Más de una década construyendo espacios seguros de aprendizaje.</p>
+                <p class="text-blue-100 text-sm">Más de una década construyendo espacios seguros.</p>
             </div>
         </div>
     </section>
 
     <!-- Sección de Servicios -->
-    <section id="servicios" class="py-20 bg-custom-gray">
+    <section id="servicios" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold text-slate-900 tracking-tight mb-4">Nuestras Áreas de Especialidad</h2>
-                <p class="text-slate-600 text-lg">Soluciones integrales, éticas y basadas en evidencia para el bienestar emocional y organizacional.</p>
+                <h2 class="text-3xl font-black text-slate-900 tracking-tight mb-4">Nuestras Áreas de Especialidad</h2>
+                <p class="text-slate-600 text-lg">Soluciones integrales, éticas y basadas en evidencia para el bienestar emocional y corporativo.</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="text-3xl mb-4">🛋️</div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3 text-custom-blue">Psicología Clínica</h3>
-                    <p class="text-slate-600 text-sm mb-6">Espacio seguro para trabajar el bienestar emocional, duelos y procesos de cambio individual y de pareja.</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">Espacio seguro para trabajar el bienestar emocional, manejo de ansiedad, duelos y procesos individuales o de pareja.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="text-3xl mb-4">🏢</div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3 text-custom-blue">Psicología Organizacional</h3>
-                    <p class="text-slate-600 text-sm mb-6">Acompañamiento a empresas en programas de bienestar, clima laboral y liderazgo consciente.</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">Acompañamiento a empresas en programas de bienestar, clima laboral, liderazgo consciente y gestión del talento humano.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="text-3xl mb-4">🎓</div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3 text-custom-blue">Formación y Talleres</h3>
-                    <p class="text-slate-600 text-sm mb-6">Cursos formativos, escuelas de familia y conferencias orientadas al desarrollo humano.</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">Cursos formativos, escuelas de familia y conferencias orientadas al desarrollo humano y crecimiento personal.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Integración Canal de YouTube -->
-    <section id="youtube" class="py-20 bg-white border-t border-slate-200">
+    <!-- Sección Interactiva Canal de YouTube (Con miniatura visual destacada) -->
+    <section id="youtube" class="py-20 bg-white border-t border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <span class="inline-block bg-red-50 text-red-600 font-semibold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-4 border border-red-100">
-                        Contenido Audiovisual
+                    <span class="inline-block bg-red-50 text-red-600 font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-4 border border-red-100">
+                        📺 Recurso Audiovisual
                     </span>
-                    <h2 class="text-3xl font-bold text-slate-900 tracking-tight mb-4">Visita nuestro Canal de YouTube</h2>
+                    <h2 class="text-3xl font-black text-slate-900 tracking-tight mb-4">Visita nuestro Canal de YouTube</h2>
                     <p class="text-slate-600 text-lg mb-6 leading-relaxed">
-                        Encuentra reflexiones sobre salud mental, entrevistas con especialistas, consejos prácticos de psicología y herramientas para tu bienestar diario.
+                        Explora reflexiones sobre salud mental, entrevistas con especialistas y contenidos prácticos diseñados para acompañar tu día a día.
                     </p>
-                    <a href="https://www.youtube.com/@psicologiaintegralydesarrollo" target="_blank" class="inline-flex items-center bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3.5 rounded-xl shadow-md transition text-sm">
-                        📺 Suscríbete al Canal de YouTube
+                    <a href="https://www.youtube.com/@psicologiaintegralydesarrollo" target="_blank" class="inline-flex items-center space-x-2 bg-red-600 hover:bg-red-700 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-red-600/20 transition text-sm">
+                        <span>Suscríbete al Canal de YouTube</span>
                     </a>
                 </div>
-                <div class="bg-slate-900 p-3 rounded-3xl shadow-xl">
-                    <div class="relative aspect-video rounded-2xl overflow-hidden bg-slate-800 flex items-center justify-center text-center p-6">
-                        <div>
-                            <p class="text-white font-bold text-lg mb-2">Psicología Integral y Desarrollo</p>
-                            <p class="text-slate-400 text-sm mb-4">Espacios de video educativo y conferencias en línea.</p>
-                            <a href="https://www.youtube.com/@psicologiaintegralydesarrollo" target="_blank" class="inline-block bg-white text-slate-900 font-bold px-4 py-2 rounded-lg text-xs hover:bg-slate-100 transition">Ver videos recientes</a>
+                <div class="relative group">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-red-500 to-blue-600 rounded-3xl opacity-20 blur-lg"></div>
+                    <div class="relative bg-slate-900 rounded-2xl overflow-hidden shadow-2xl border border-slate-800">
+                        <!-- Miniatura simulada con estilo de reproductor de video profesional -->
+                        <div class="relative aspect-video bg-slate-950 flex flex-col items-center justify-center p-6 text-center">
+                            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80')] bg-cover bg-center opacity-30"></div>
+                            <div class="relative z-10">
+                                <div class="w-16 h-16 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-4 shadow-xl shadow-red-600/50">▶</div>
+                                <h3 class="text-white font-bold text-lg mb-1">Psicología Integral y Desarrollo</h3>
+                                <p class="text-slate-300 text-xs mb-4">Canal oficial de bienestar y salud mental</p>
+                                <a href="https://www.youtube.com/@psicologiaintegralydesarrollo" target="_blank" class="inline-block bg-white text-slate-900 font-bold px-4 py-2 rounded-lg text-xs hover:bg-slate-100 transition shadow">Ver videos en YouTube</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -148,7 +155,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer Actualizado con los nuevos correos -->
     <footer id="contacto" class="bg-slate-900 text-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-12">
             <div>
@@ -161,9 +168,9 @@
                 </div>
             </div>
             <div>
-                <h3 class="text-lg font-bold mb-4">Contacto Directo</h3>
-                <p class="text-slate-400 text-sm mb-2"><strong>Correo:</strong><br>citas@psicologiaintegralydesarrollo.com</p>
-                <p class="text-slate-400 text-sm"><strong>Ubicación:</strong><br>Duitama, Boyacá – Colombia</p>
+                <h3 class="text-lg font-bold mb-4">Canales de Contacto</h3>
+                <p class="text-slate-400 text-sm mb-2"><strong>General / Citas:</strong><br><a href="mailto:psicologiaintegralydesarrollo@gmail.com" class="text-blue-400 hover:underline">psicologiaintegralydesarrollo@gmail.com</a></p>
+                <p class="text-slate-400 text-sm"><strong>Trabaja con nosotros:</strong><br><a href="mailto:seleccionpsicologiaintegral@gmail.com" class="text-blue-400 hover:underline">seleccionpsicologiaintegral@gmail.com</a></p>
             </div>
             <div>
                 <h3 class="text-lg font-bold mb-4">Atención Inmediata</h3>
@@ -174,7 +181,7 @@
             </div>
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
-            © 2026 Psicología Integral y Desarrollo (PYD). Diseño por aldea media. Todos los derechos reservados.
+            © 2026 Psicología Integral y Desarrollo (PYD). Todos los derechos reservados.
         </div>
     </footer>
 
