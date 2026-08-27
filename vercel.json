@@ -2,6 +2,5 @@
   "cleanUrls": true,
   "rewrites": [
     { "source": "/nosotros", "destination": "/nosotros.html" }
-  ],
-  "errorDocument": "404.html"
+  ]
 }
