@@ -11,11 +11,8 @@
         .text-custom-blue { color: #007DBD; }
         .border-custom-blue { border-color: #007DBD; }
         .hover\:bg-custom-blue-dark:hover { background-color: #006499; }
-
         .bg-custom-orange { background-color: #ED4C24; }
         .text-custom-orange { color: #ED4C24; }
-        .hover\:bg-custom-orange-dark:hover { background-color: #d23d18; }
-
         .bg-custom-gray { background-color: #F0F4FC; }
     </style>
 </head>
@@ -25,7 +22,9 @@
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <div class="bg-custom-blue text-white font-bold p-2.5 rounded-xl text-lg shadow-sm">PYD</div>
+                <!-- Logo: Si subes una imagen llamada logo.png al repositorio, aparecerá aquí -->
+                <img src="logo.png" alt="PYD Logo" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex';" class="h-10 w-auto object-contain">
+                <div id="fallback-logo" class="bg-custom-blue text-white font-bold p-2.5 rounded-xl text-lg shadow-sm flex items-center justify-center">PYD</div>
                 <div>
                     <span class="block font-bold text-slate-900 leading-tight">Psicología Integral y Desarrollo</span>
                     <span class="text-xs text-slate-500">Alianza de Profesionales</span>
@@ -39,32 +38,38 @@
                 <a href="#contacto" class="hover:text-custom-blue transition">Contacto</a>
             </nav>
             <div>
-                <a href="https://wa.me/573008373012" target="_blank" class="bg-custom-orange hover:bg-custom-orange-dark text-white font-medium px-5 py-2.5 rounded-xl text-sm shadow-sm transition">
-                    Conversemos por WhatsApp
+                <a href="https://wa.me/573008373012" target="_blank" class="bg-custom-blue hover:bg-custom-blue-dark text-white font-medium px-5 py-2.5 rounded-xl text-sm shadow-sm transition">
+                    WhatsApp Directo
                 </a>
             </div>
         </div>
     </header>
 
     <!-- Hero Principal -->
-    <section id="inicio" class="py-20 lg:py-28 bg-white border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">
-            <span class="inline-block bg-custom-gray text-custom-blue font-semibold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-6 border border-blue-100">
-                +8 Años transformando vidas y organizaciones
-            </span>
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
-                Acompañamiento psicológico y organizacional para personas y empresas
-            </h1>
-            <p class="text-lg sm:text-xl text-slate-600 mb-10 leading-relaxed">
-                Somos una alianza de psicólogos especializados en salud mental, liderazgo y desarrollo humano, en Colombia y para colombianos en el mundo.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://wa.me/573008373012" target="_blank" class="bg-custom-orange hover:bg-custom-orange-dark text-white font-semibold px-8 py-4 rounded-xl shadow-md transition text-base">
-                    👉 Agenda tu sesión por WhatsApp
-                </a>
-                <a href="#servicios" class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-8 py-4 rounded-xl transition text-base">
-                    Conoce nuestras áreas de trabajo
-                </a>
+    <section id="inicio" class="py-16 lg:py-24 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="inline-block bg-custom-gray text-custom-blue font-semibold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-6 border border-blue-100">
+                    +10 Años transformando vidas y organizaciones
+                </span>
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+                    Acompañamiento psicológico y organizacional para personas y empresas
+                </h1>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                    Somos una alianza de psicólogos especializados en salud mental, liderazgo y desarrollo humano, en Colombia y para colombianos en el mundo.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/573008373012" target="_blank" class="bg-custom-blue hover:bg-custom-blue-dark text-white font-semibold px-8 py-4 rounded-xl shadow-md transition text-center text-base">
+                        👉 Agenda tu sesión por WhatsApp
+                    </a>
+                    <a href="#servicios" class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-8 py-4 rounded-xl transition text-center text-base">
+                        Conoce nuestros servicios
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-2 bg-custom-blue rounded-3xl opacity-10 blur-lg"></div>
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Apoyo psicológico y profesional humanizado" class="relative rounded-3xl shadow-xl w-full object-cover h-[420px]">
             </div>
         </div>
     </section>
@@ -174,6 +179,11 @@
             <div>
                 <h3 class="text-lg font-bold mb-4">Psicología Integral y Desarrollo</h3>
                 <p class="text-slate-400 text-sm leading-relaxed mb-4">Alianza de profesionales en psicología trabajando por la salud mental y el desarrollo humano desde Duitama, Boyacá – Colombia.</p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="https://www.youtube.com/@psicologiaintegralydesarrollo" target="_blank" class="bg-slate-800 hover:bg-custom-blue p-2.5 rounded-xl text-sm transition">YouTube</a>
+                    <a href="https://www.instagram.com/psicologiaintegralydesarrollo/" target="_blank" class="bg-slate-800 hover:bg-custom-blue p-2.5 rounded-xl text-sm transition">Instagram</a>
+                    <a href="https://www.facebook.com/p/Psicolog%C3%ADa-Integral-y-Desarrollo-100063636155963" target="_blank" class="bg-slate-800 hover:bg-custom-blue p-2.5 rounded-xl text-sm transition">Facebook</a>
+                </div>
             </div>
             <div>
                 <h3 class="text-lg font-bold mb-4">Canales de Contacto</h3>
@@ -183,7 +193,7 @@
             <div>
                 <h3 class="text-lg font-bold mb-4">Atención Directa</h3>
                 <p class="text-slate-400 text-sm mb-4">Habla directamente con nuestro equipo y recibe orientación personalizada.</p>
-                <a href="https://wa.me/573008373012" target="_blank" class="inline-block bg-custom-orange hover:bg-custom-orange-dark text-white font-semibold px-6 py-3 rounded-xl text-sm transition shadow-sm">
+                <a href="https://wa.me/573008373012" target="_blank" class="inline-block bg-custom-blue hover:bg-custom-blue-dark text-white font-semibold px-6 py-3 rounded-xl text-sm transition shadow-sm">
                     Escríbenos por WhatsApp
                 </a>
             </div>
