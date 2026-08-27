@@ -19,15 +19,12 @@
     <!-- Header / Navbar -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <!-- Carga tu logo.png en tu repositorio de GitHub -->
-                <img src="logo.png" alt="PYD Logo" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex';" class="h-11 w-auto object-contain">
+            <!-- Solo Logo (Se corrigió la ruta a logo.png.png según tu repositorio) -->
+            <a href="index.html" class="flex items-center">
+                <img src="logo.png.png" alt="PYD Logo" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex';" class="h-12 w-auto object-contain p-1 bg-slate-100 rounded-xl border border-slate-200">
                 <div id="fallback-logo" class="bg-custom-blue text-white font-bold p-2.5 rounded-xl text-lg shadow-sm hidden items-center justify-center">PYD</div>
-                <div>
-                    <span class="block font-bold text-slate-900 leading-tight text-base">Psicología Integral y Desarrollo</span>
-                    <span class="text-xs text-slate-500 font-medium">Alianza de Profesionales</span>
-                </div>
-            </div>
+            </a>
+
             <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
                 <a href="index.html" class="text-custom-blue transition">Inicio</a>
                 <a href="nosotros.html" class="hover:text-custom-blue transition">Nosotros</a>
@@ -154,7 +151,7 @@
         </div>
     </section>
 
-    <!-- Sección de Contacto con Formulario Directo -->
+    <!-- Sección de Contacto con Formulario -->
     <section id="contacto" class="py-20 bg-slate-50 border-t border-slate-100">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
@@ -165,9 +162,7 @@
                 <p class="text-slate-600">Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
             </div>
 
-            <!-- Formulario conectado a psicologiaintegralydesarrollo@gmail.com -->
             <form action="https://formsubmit.co/psicologiaintegralydesarrollo@gmail.com" method="POST" class="bg-white p-8 sm:p-10 rounded-3xl shadow-xl border border-slate-100 space-y-6">
-                <!-- Configuración adicional para FormSubmit -->
                 <input type="hidden" name="_subject" value="Nuevo mensaje desde la Web PYD">
                 <input type="hidden" name="_captcha" value="false">
 
@@ -226,8 +221,8 @@
         </div>
     </footer>
 
-    <!-- Botón Flotante para Ir Arriba -->
-    <a href="#" class="fixed bottom-6 right-6 bg-custom-blue hover:bg-custom-blue-dark text-white w-12 h-12 rounded-full shadow-xl flex items-center justify-center text-lg transition z-50 group" title="Ir arriba">
+    <!-- Botón Ir Arriba -->
+    <a href="#" class="fixed bottom-6 right-6 bg-custom-blue hover:bg-custom-blue-dark text-white w-12 h-12 rounded-full shadow-xl flex items-center justify-center text-lg transition z-50" title="Ir arriba">
         ↑
     </a>
 
