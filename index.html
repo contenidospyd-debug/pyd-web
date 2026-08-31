@@ -43,26 +43,59 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased font-sans relative selection:bg-pyd-100 selection:text-pyd-700">
 
+   <!-- HEADER CON MENÚ MÓVIL RESPONSIVO -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-xs">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="./" class="flex items-center space-x-3">
-                <img src="logo.png" alt="PYD Logo" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex';" class="h-10 w-auto object-contain">
-                <div id="fallback-logo" class="bg-pyd-500 text-white font-bold px-3 py-2 rounded-xl text-sm hidden items-center justify-center">PYD</div>
+                <img src="logo.png" alt="PYD Logo" class="h-10 w-auto object-contain">
             </a>
+            
+            <!-- Menú de Escritorio -->
             <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
-                <a href="./" class="text-pyd-500 transition">Inicio</a>
+                <a href="./" class="text-pyd-500 font-bold transition">Inicio</a>
                 <a href="nosotros" class="hover:text-pyd-500 transition">Nosotros</a>
                 <a href="#servicios" class="hover:text-pyd-500 transition">Servicios</a>
                 <a href="#beneficios" class="hover:text-pyd-500 transition">Por qué elegirnos</a>
                 <a href="#contacto" class="hover:text-pyd-500 transition">Contacto</a>
             </nav>
-            <div class="flex items-center space-x-3">
+
+            <div class="hidden md:flex items-center space-x-3">
                 <a href="https://wa.me/573008373012" target="_blank" class="bg-pyd-500 hover:bg-pyd-600 text-white font-semibold px-5 py-2.5 rounded-xl text-sm shadow-sm shadow-pyd-500/20 transition">
+                    Agendar Cita
+                </a>
+            </div>
+
+            <!-- Botón Menú Hamburguesa (Móvil) -->
+            <button id="menu-btn" class="md:hidden text-slate-700 focus:outline-none p-2 rounded-xl hover:bg-slate-100 transition" aria-label="Abrir menú">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Menú Desplegable Móvil -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-6 pt-4 pb-6 space-y-3 shadow-xl">
+            <a href="./" class="block text-base font-bold text-pyd-500 py-1">Inicio</a>
+            <a href="nosotros" class="block text-base font-semibold text-slate-600 hover:text-pyd-500 py-1">Nosotros</a>
+            <a href="#servicios" class="block text-base font-semibold text-slate-600 hover:text-pyd-500 py-1">Servicios</a>
+            <a href="#beneficios" class="block text-base font-semibold text-slate-600 hover:text-pyd-500 py-1">Por qué elegirnos</a>
+            <a href="#contacto" class="block text-base font-semibold text-slate-600 hover:text-pyd-500 py-1">Contacto</a>
+            <div class="pt-3">
+                <a href="https://wa.me/573008373012" target="_blank" class="block w-full text-center bg-pyd-500 hover:bg-pyd-600 text-white font-semibold py-3 rounded-xl text-sm shadow-md shadow-pyd-500/20 transition">
                     Agendar Cita
                 </a>
             </div>
         </div>
     </header>
+
+    <!-- Script para activar el menú hamburguesa -->
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 
     <section class="py-20 lg:py-28 bg-white overflow-hidden border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center">
